@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet xml:id="F25-test-I" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Test I</title>
+  <!-- OUTLINE -->
+  <!-- 1: Hamiltonian -->
+  <!-- 2: Eulerian -->
+  <!-- 3: Multinomial (maybe rearrangements rather than theorem?) -->
+  <!-- 4: Distribution with two upper bound restrictions (mini PIE) -->
+  <!-- 5: Induction proof -->
+  <!-- 6: String counting -->
+  <!-- 7: Combinatorial proof -->
+  <!-- 8: Lattice path word problem -->
+  
+  <!-- : Recurrence justification -->
+
+  
+  <page>
+    <exercise>
+      <introduction>
+        <p>
+          Let <m>\mbf{G}_1</m> be the graph shown below. 
+        </p>
+        <image width="60%">
+          <shortdescription>A graph with 10 vertices and 14 edges</shortdescription>
+          <prefigure xmlns="https://prefigure.org" label="F25-test-I-hamiltonian">
+            <diagram dimensions="(450,300)" margins="15">
+              <definition>graph={1:[3,8,9],
+                                2:[7,10],
+                                3:[4,5],
+                                4:[8,10],
+                                5:[7,9,10],
+                                6:[5,9]}</definition>
+              <coordinates bbox="(-1,-1,1,1)">
+                <network graph="graph"
+                        scale="0.8" node-fill="#ddd"
+                        seed="1" labels="yes">
+                </network>
+              </coordinates>
+            </diagram>
+          </prefigure>
+        </image>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            Explain why <m>\mbf{G}_1</m> is not hamiltonian.
+          </p>
+        </statement>
+        <solution component="F25-solns">
+          <p>
+            We first identify the edges that must be present in any hamiltonian cycle because they are incident with vertices of degree two. These edges are <m>\set{4,8},\set{8,1},\set{9,6},\set{6,5},\set{5,7},\set{7,2},\set{2,10}</m>. Notice now that vertex 5 already has two required edges, which means we cannot use the edge <m>\set{5,3}</m> in a hamiltonian cycle. This forces us to use the edges <m>\set{3,4}</m> and <m>\set{3,1}</m>, which means that we are now required to use <m>\set{4,8},\set{8,1},\set{1,3},\set{3,4}</m> in a hamiltonian cycle. However, this is already a cycle, so we cannot have a hamiltonian cycle.
+          </p>
+        </solution>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Add one edge to <m>\mbf{G}_1</m> to form a new graph <m>\mbf{G}_2</m> that <em>is</em> hamiltonian and give a hamiltonian cycle in <m>\mbf{G}_2</m>.
+          </p>
+        </statement>
+        <solution component="F25-solns">
+          <p>
+            Form <m>\mbf{G}_2</m> by adding the edge <m>\set{3,9}</m>. Then <m>(3,9,6,5,7,2,10,4,8,1)</m> is a hamiltonian cycle in <m>\mbf{G}_2</m>.
+          </p>
+        </solution>
+      </task>
+    </exercise>
+  </page>
+  <page>
+    <exercise>
+      <statement>
+        <p>
+          Let <m>\mbf{G}</m> be the graph shown below. Explain why <m>\mbf{G}</m> is not eulerian or use the algorithm from the book/class to find an eulerian circuit starting from vertex <m>1</m> in <m>\mbf{G}</m>. (If <m>\mbf{G}</m> is eulerian, you must show all steps of the algorithm to receive full credit but need not provide any further explanation.) 
+        </p>
+        <image width="60%">
+          <shortdescription>A graph with 10 vertices and 21 edges</shortdescription>
+          <prefigure xmlns="https://prefigure.org" label="F25-test-I-eulerian">
+            <diagram dimensions="(450,300)" margins="15">
+              <definition>graph={1:[2,5,3,7,4,8],
+                                2:[7,8,10],
+                                3:[5],
+                                4:[6,7,8],
+                                5:[7,9,10],
+                                6:[5,9,10],
+                                7:[8,10]}</definition>
+              <coordinates bbox="(-1,-1,1,1)">
+                <network graph="graph"
+                        scale="0.8" node-fill="#ddd"
+                        seed="30483" labels="yes">
+                </network>
+              </coordinates>
+            </diagram>
+          </prefigure>
+        </image>
+      </statement>
+      <solution component="F25-solns">
+        <p>
+          Our first circuit formed by the algorithm is <m>(1,2,7,1,3,5,1,4,6,5,7,4,8,1)</m>. Now the first vertex with unused edges is <m>2</m>, so we find <m>(2,8,7,10,2)</m> and insert it to form <m>(1,2,8,7,10,2,7,1,3,5,1,4,6,5,7,4,8,1)</m>. Now the first vertex with unused edges is <m>10</m>, so we scan and form <m>(10,5,9,6,10)</m>. We splice this in and have 
+          <me>
+            (1,2,8,7,10,5,9,6,10,2,7,1,3,5,1,4,6,5,7,4,8,1)
+          </me>
+          as our eulerian circuit.
+        </p>
+      </solution>
+    </exercise>
+  </page>
+  <page>
+    <exercise>
+      <statement>
+        <p>
+          Bucky has amassed a collection of <m>100</m> labubu dolls. They are all modeled after other mascots, but he has several duplicates. His collection contains:
+          <ul>
+            <li>
+              <p>
+                <m>17</m> Buzz dolls
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>21</m> Duck dolls (from Oregon)
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>0</m> Goldie Gopher dolls
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>12</m> Herky Hawk dolls
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>27</m> Lil' Red dolls
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>16</m> Purdue Pete dolls
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>7</m> Sparty dolls
+              </p>
+            </li>
+          </ul>
+          All the labubus modeled after a particular mascot are identical. (For example, Bucky cannot tell the difference between his <m>7</m> Sparty dolls.) Bucky plans to make a single line of his labubu dolls on the sideline in Camp Randall Stadium before the next home football game. How many distinct arrangements of dolls can he make? 
+        </p>
+        <p>
+          Be sure to provide some explanation for your answer.
+        </p>
+      </statement>
+      <solution component="F25-solns">
+        <p>
+          Because each labubu modeled after a particular mascot is indistinguishable from the others modeled after that mascot, we can view this as arranging the letters B, D, G, H, L, P, and S (using the first letter of each mascot's name) where the frequency of each letter is the number of labubus of that mascot that we have. Thus, the solution calls for a multinomial coefficient and Bucky can arrange the labubus in
+          <me>
+            \binom{100}{17,21,0,12,27,16,7}
+          </me>
+          ways.
+        </p>
+      </solution>
+    </exercise>
+  </page>
+  <page>
+    <exercise>
+      <statement>
+        <p>
+          How many integer solutions are there to the inequality
+          <me>
+            x_1 + x_2 + x_3 + x_4 + x_5 \leq 500
+          </me>
+          that satisfy all of the conditions below (simultaneously)?
+          <ul>
+            <li>
+              <p>
+                <m>x_2\geq 0</m> and <m>x_5\geq 0</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>x_1\geq 1</m> and <m>x_4\geq 1</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>x_3\geq 5</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>x_2\leq 10</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>x_4 \lt 20</m>
+              </p>
+            </li>
+          </ul>
+          Be sure to provide some explanation for your answer.
+        </p>
+      </statement>
+      <solution component="F25-solns">
+        <p>
+          We can view this as distributing 500 folders with a keep pile that could be empty. To deal with the constraints <m>x_2\leq 10</m> and <m>x_4\lt 20</m>, we first count solutions while ignoring those constraints, then subtract the number of solutions where each constraint is violated (<m>x_2 \gt 10</m> or <m>x_4 \geq 20</m>), and finally add back the number of solutions where <em>both</em> constraints are violated, as those will be subtracted twice in the previous step.
+        </p>
+        <p>
+          Using only the first three constraints, we set aside 4 for <m>x_3</m> and need 3 artificial (<m>x_2</m>, <m>x_5</m>, and the keep pile). We need 5 dividers (including the extra for the keep pile), so we have <m>500-4+3 = 499</m> folders that determine 498 gaps and pick 5: <m>C(498,5)</m>.
+        </p>
+        <p>
+          To count those in which <m>x_2 \leq 10</m> is false, we count those for which <m>x_2 \gt 10</m>. Now we need to set aside 10 for <m>x_2</m>, set aside 4 for <m>x_3</m>, and need artificial folders only for <m>x_5</m> and the keep pile. We still need 5 dividers, so we have <m>500-10-4+2 = 488</m> folders. These determine 491 gaps, so we have <m>C(487,5)</m> solutions in this case.
+        </p>
+        <p>
+          To count those in which <m>x_4 \lt 20</m> is false, we count those for which <m>x_4 \geq 20</m>. Now we need to set aside 19 for <m>x_4</m> (avoiding the need for an artificial folder for <m>x_4</m>), set aside 4 for <m>x_3</m>, and need artificial folders for <m>x_2</m>, <m>x_5</m>, and the keep pile. We still need 5 dividers, so we have <m>500-19-4+3 = 480</m> folders. These determine 479 gaps, so we have <m>C(479,5)</m> solutions in this case.
+        </p>
+        <p>
+          To count those in which <m>x_2 \leq 10</m> and <m>x_4 \lt 20</m> are both false, we count those for which <m>x_2 \gt 10</m> and <m>x_4 \geq 20</m>. Here we need to set aside 10 for <m>x_2</m>, 4 for <m>x_3</m>, and 19 for <m>x_4</m> (avoiding the need for an artificial folder for <m>x_4</m>). We need artificial folders for <m>x_5</m> and the keep pile. We still need 5 dividers, so we have <m>500-10-19-4+2 = 469</m> folders. These determine 468 gaps, so we have <m>C(468,5)</m> solutions in this case.
+        </p>
+        <p>
+          Thus, our solution is
+          <me>
+            \binom{498}{5} - \binom{487}{5} - \binom{479}{5} + \binom{468}{5}
+          </me>.
+        </p>
+      </solution>
+    </exercise>
+  </page>
+  <page>
+    <exercise>
+      <statement>
+        <p>
+          Use the Principle of Mathematical Induction to prove that for all positive integers <m>n</m>, 
+          <me>
+            \frac{n^3}{3}+\frac{n^5}{5}+\frac{7n}{15}
+          </me>
+          is an integer.
+        </p>
+      </statement>
+      <solution component="F25-solns">
+        <proof>
+          <p>
+            We will prove this by induction. The basis step is when <m>n=1</m>. In this case, we have
+            <me>
+              \frac{1^3}{3}+\frac{1^5}{5}+\frac{7}{15}  = \frac{1}{3} + \frac{1}{5} + \frac{7}{15} = \frac{15}{15} = 1
+            </me>.
+            Since <m>1</m> is an integer, the basis step is verified.
+          </p>
+          <p>
+            Now suppose that for some integer <m>k\geq 1</m> that 
+            <me>
+              \frac{k^3}{3}+\frac{k^5}{5}+\frac{7k}{15}
+            </me>
+            is an integer. We must show that
+            <me>
+              \frac{(k+1)^3}{3}+\frac{(k+1)^5}{5}+\frac{7(k+1)}{15}
+            </me>
+            is an integer, which we will denote by <m>m</m>. Expanding, we have
+            <me>
+              \frac{k^3+3k^2+3k+1}{3}+\frac{k^5+5k^4+10k^3+10k^2+5k+1}{5}+\frac{7k+7}{15} =
+              \frac{k^3}{3}+\frac{k^5}{5}+\frac{7k}{15} + k^2 + k + \frac{1}{3} + k^4+2k^3+2k^2+k+\frac{1}{5} + \frac{7}{15} = 
+              m + k^2+k + k^4+2k^3+2k^2+k + 1
+            </me>.
+            Since <m>m</m> is an integer and <m>k</m> is an integer, <m>m + k^2+k + k^4+2k^3+2k^2+k + 1</m> is also an integer. Therefore, by the Principle of Mathematical Induction, <me>
+            \frac{n^3}{3}+\frac{n^5}{5}+\frac{7n}{15}
+            </me>
+            is an integer for all positive integers <m>n</m>.
+          </p>
+        </proof>
+      </solution>
+    </exercise>
+  </page>
+  <page>
+    <exercise>
+      <statement>
+        <p>
+          Let <m>n\geq 12</m> be an integer. Find a formula for the number of strings of length <m>n</m> with symbols chosen from the <m>10</m> decimal digits and the <m>26</m> uppercase letters in the English alphabet subject to all of the following restrictions (at the same time):
+          <ul>
+            <li>
+              <p>
+                The digits 4, 7, and 5 appear exactly one time each and in this order, but they need not appear consecutively.
+              </p>
+            </li>
+            <li>
+              <p>
+                Exactly <m>6</m> positions in the string are filled by the letter W.
+              </p>
+            </li>
+            <li>
+              <p>
+                The last three positions in the string are distinct letters from the set <m>\set{\text{B,U,C,K,Y}}</m>. The letters from this set do not appear elsewhere in the string.
+              </p>
+            </li>
+          </ul>
+          For example, one of the strings of length <m>17</m> that satisfies all these restrictions is <sq>WA34WW751WWAWTCKU</sq>.
+        </p>
+        <p>
+          Be sure to provide some explanation for your answer.
+        </p>
+      </statement>
+      <solution component="F25-solns">
+        <p>
+          We start by counting the ways to fill the last three positions. Since we have five letters to pick from and they must be distinct, there are <m>P(5,3)</m> ways to fill in those positions. This leaves <m>n-3</m> positions to be filled, and we must choose <m>6</m> of them in which to place a W. There are <m>\binom{n-3}{6}</m> ways to do this. There are now <m>n-3-6=n-9</m> positions left to fill. We must choose 3 of them in which to place 4, 7, and 5, which can be done in <m>\binom{n-9}{3}</m> ways. Since the digits must appear in the order 4,7,5, we have no further choices related to that part of the requirements. We have 20 letters remaining that we can use and 7 digits remaining that we can use, for a total of 27 allowable symbols. There are <m>n-12</m> positions left to fill, so we can fill those in <m>27^{n-12}</m> ways. To fully specify a string, we must multiply all these factors, so we have
+          <me>
+            P(5,3)\binom{n-3}{6}\binom{n-9}{3} 27^{n-12}
+          </me>
+          strings that meet the given requirements.
+        </p>
+      </solution>
+    </exercise>
+  </page>
+  <page>
+    <exercise>
+      <statement>
+        <p>
+          Give a combinatorial argument for the identity
+          <me>
+            \binom{n}{k} - \binom{n-3}{k} = \binom{n-1}{k-1} + \binom{n-2}{k-1} + \binom{n-3}{k-1}
+          </me>.
+        </p>
+        <p>
+          <alert>No points will be awarded for a proof that uses algebraic manipulation.</alert>
+        </p>
+      </statement>
+      <hint>
+        <p>
+          Consider choosing a team from a population in which there are three individuals of interest,  designated as A, B, and C.
+        </p>
+      </hint>
+      <solution component="F25-solns">
+        <p>
+          The left-hand side counts the number of ways to choose a team of size <m>k</m> from the population of size <m>n</m> when we must choose at least one of A, B, and C. The <m>C(n-3,k)</m> term being subtracted eliminates the teams in which none of those three individuals are chosen.
+        </p>
+        <p>
+          The right-hand side counts the same thing, but by grouping. The term <m>C(n-1,k-1)</m> counts the number of teams on which A is definitely a member with B and C allowed to be members or not. The term <m>C(n-2,k-1)</m> counts those teams where A is <em>not</em> a member, B is a member, and C is allowed but not required to be a member. (Here we use <m>n-2</m> because the decisions about A and B have already been made, and since we chose only 1, we must choose <m>k-1</m> more.) The term <m>C(n-3,k-1)</m> counts those teams where C is a member but neither A nor B is a member. (Here we use <m>n-3</m> because the decisions about A, B, and C have all been made with only 1 included, so we must choose <m>k-1</m> from the remaining <m>n-3</m>.)
+        </p>
+      </solution>
+    </exercise>
+  </page>
+  <page>
+    <exercise>
+      <statement>
+        <p>
+          The city of Combinatoria has streets laid out in a grid pattern. Streets run east-west and are labeled using integers in consecutive increasing order. 1st Street is at the southern end of the city and 20th Street at the northern end of the city. Avenues run north-south and are labeled using letters in consecutive alphabetical order. Avenue A is at the west end of the city and Avenue Z is at the east edge of the city. 
+        </p>
+        <p>
+          A food delivery robot starts at a restaurant at the intersection of 3rd Street and Avenue B. Your apartment is at the intersection of 17th Street and Avenue W. The robot also has a delivery to make to an apartment at the intersection of 12th Street and Avenue M. The robot follows streets and avenues and is only capable of moving north and east on its way from the restaurant to make its deliveries. Find the number of paths it can take from the restaurant to your apartment for which it stops to make its other delivery on its way to drop off your dinner.
+        </p>
+        <p>
+          Be sure to provide some explanation for your answer.
+        </p>
+      </statement>
+      <hint>
+        <p>
+          The letters of the English alphabet in alphabetical order are ABCDEFGHIJKLMNOPQRSTUVWXYZ.
+        </p>
+      </hint>
+      <solution component="F25-solns">
+        <p>
+          This is a lattice path counting problem. The restaurant is at <m>(3,2)</m>, the intermediate delivery is at <m>(12,13)</m>, and your apartment is at <m>(17,23)</m>. To get from the restaurant to the intermediate delivery requires 9 horizontal moves and 11 vertical moves. This is 20 moves and <m>C(20,9)</m> lattice paths. To get from the intermediate delivery to your apartment requires 5 horizontal moves and 10 vertical moves. This is 15 moves and <m>C(15,5)</m> lattice paths. To fully specify a route for the robot, we need to make both choices. Thus, we multiply and have 
+          <me>
+            \binom{20}{9}\binom{15}{5}
+          </me>
+          routes for the robot.
+        </p>
+      </solution>
+    </exercise>
+  </page>
+</worksheet>

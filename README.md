@@ -2,7 +2,7 @@
 
 ## Context
 
-I'm using "STEM materials" as a shorthand for "courses requiring a significant amount of mathematical notation". I have a preferred technology (PreTeXt) for preparing accessible forms of longer documents, but the suggestions here will cover a wider range of tools that can be used successfully for shorter documents.
+I'm using "STEM materials" as a shorthand for "courses requiring a significant amount of mathematical notation". I have a preferred technology (PreTeXt) for preparing accessible forms of longer documents, but the suggestions here will cover a wider range of tools that can be used successfully for shorter documents. We need to think about how to do this because of how screen readers [handle mathematical content](https://mathtech.org/2025/04/25/screen-reader.html).
 
 ## Main materials
 

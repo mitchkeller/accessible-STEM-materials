@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="F2025" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Fall 2025 Tests</title>
+
+  <introduction>
+    <p>These are the tests and final exam from Prof Keller's Fall 2025 MATH 475 class.</p>
+  </introduction>
+
+  <!-- include sections -->
+  <xi:include href="F2025/test-I.ptx"/>
+  <!-- <xi:include href="ch-2025-spring-exams/wkst-2025-midterm-2.ptx" xpointer="wkst-2025-midterm-2/1" /> -->
+  <!-- <xi:include href="ch-2025-spring-exams/wkst-2025-final-exam.ptx" /> -->
+</chapter>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-canvas" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Short Content in Canvas</title>
+  <p>
+    The quickest and easiest way for an instructor to get small documents (e.g., homework solutions) available to students in an accessible format is to use the MathJax support in Canvas. UW<ndash/>Madison's Canvas instance has the MathJax components enabled by default. While this has the limitation that instructors/authors who have elaborate custom <latex/> macros will not be able to use those macros, it's unlikely that something appearing in a small document for students would require such macros.
+  </p>
+  <p>
+    Putting math content into a Canvas page (or basically any text box one can write in on Canvas, including announcements, quizzes, etc.) is as simple as marking the mathematical content with the appropriate delimiters. 
+    <ul>
+      <li>
+        <p>
+          For <term>inline math</term>, which is displayed in the middle of a line <m>ax^2+bx+c=0</m> as I just did, the correct delimiter is <c>\(</c> before the math content and <c>\)</c> afterward. You likely need this all on one line, so for example <c>\(ax^2+bx+c=0\)</c> will render nicely.
+        </p>
+      </li>
+      <li>
+        <p>
+          For <term>displayed mathematics</term>, which is centered on its own line such as <md>x=\frac{-b\pm \sqrt{b^2-4ac}}{2a}</md>,
+          the correct delimiter is <c>\[</c> before the math content and <c>\]</c> afterward. You likely need this all on one line, so for example <c>\[x=\frac{-b\pm \sqrt{b^2-4ac}}{2a}\]</c> will render nicely.
+        </p>
+      </li>
+    </ul>
+  </p>
+  <p>
+    <alert>If you are supporting long-time <latex /> users</alert>, you may have to help them retrain their fingers. <latex /> allows the use of <c>$</c> as the delimiter (one on each side) for inline math and <c>$$</c> (one pair on each side) for displayed math. Fortunately, <latex /> also supports the delimiters that MathJax expects, so if your users are still wanting to use <latex /> to prepare things that will be used in print format, they can retrain their fingers to use the Canvas-supported delimiters and just use them everywhere. (I've been using <latex /> for more than 20 years, and it only took a couple of weeks to retrain my fingers.)
+  </p>
+  <p>
+    MathJax also supports some more elaborate way that <latex /> provides for displaying equations, such as multiline aligned equations. These generally involve starting with a command such as <c>\begin{align*}</c>. I have found that these work fine in Canvas, but you need to use shift+return to insert line breaks while editing on Canvas. If you just hit return, it separates the content too much.
+  </p>
+  <p>
+    Math content might need &lt; and &gt;, and <latex /> sometimes uses &amp; as a control character in matrices or for alignment. These are special characters in HTML. MathJax includes the commands <c>\lt</c>, <c>\gt</c>, and <c>\amp</c> to make things work well. Canvas seems to properly escape things automatically, so typing &lt;, &gt;, or &amp; should work fine, but knowing about these special commands might be helpful.
+  </p>
+  </section>
+

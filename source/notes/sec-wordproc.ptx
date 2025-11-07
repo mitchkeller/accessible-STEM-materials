@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-wordproc" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Word Processors</title>
+  <p>
+    Using Microsoft Word or Google Docs isn't the worst idea in the world for producing accessible documents, even with mathematical content. Word's equation editor even has rudimentary support for <latex /> syntax, so someone who has <latex /> source could use that and keyboard shortcuts to get into/out of the equation editor pretty efficiently.
+  </p>
+  <p>
+    <em>However</em>, default user behavior in a word processor tends to not produce accessible documents. In particular, an accessible document needs to have a meaningful heading structure. Most users are not in the habit of using the built-in heading styles, and the software generally will let you skip from a level 2 heading to a level 4 heading with no level 3 heading in between, which violates accessibility requirements. 
+  </p>
+  <p>
+    I am not an expert in using word processors to create accessible documents, so I'm not going to say much more here. It is definitely possible, but it requires a level of care that most users have not historically applied.
+  </p>
+</section>
+

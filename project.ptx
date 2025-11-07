@@ -11,6 +11,15 @@
             publication="publication_syllabus.ptx" output-filename="sample-syllabus.zip" /> 
     <target name="syllabus-latex" format="latex" source="syllabus/syllabus.ptx" publication="publication_syllabus_latex.ptx" 
             output-filename="sample-syllabus.tex" />
+    <target name="test-web" source="test/math475.ptx" format="html"
+            publication="publication_test.ptx" deploy-dir="test" />
+    <target name="test-canvas" source="test/math475.ptx" format="html"
+            compression="scorm" publication="publication_test.ptx"
+            output-filename="math475-tests.zip" />
+    <target name="test-latex" source="test/math475.ptx" format="latex"
+            output-filename="tests.tex" publication="publication_test.ptx" />
+    <target name="notes" source="notes/main.ptx" format="html"
+            publication="publication.ptx" deploy-dir="notes" />
   </targets>
 </project>
 

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-why" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Why Care About Accessibility?</title>
+  <p>
+    A lot of us are feeling a sense of urgency around accessible course materials now because of the change in applicability of the Americans with Disabilities Act to require that all digital course materials meet WCAG 2.1, Level AA standards for accessibility. However, campus has been moving toward making its public-facing websites accessible for many years, and there was a long-term plan to help transition digital course materials to accessible formats. The change in ADA regulations has put us on an expedited timeline.
+  </p>
+  <p>
+    Broadly speaking, when we think about digital accessibility, most concerns focus on making materials accessible to individuals who use screen reader technology. This is a particular difficulty for instructors in STEM fields (and some adjacent fields such as Economics or Actuarial Science), as our course content typically requires a significant amount of mathematical notation. For decades, the gold standard for typesetting mathematical notation has been <latex/> (and its predecessor TeX). However, <latex/> was designed to produce files meant to be printed. It has a heavy focus on producing beautiful <em>print</em> documents, and historically, the PDFs produced by <latex/> do not meet even the most basic of accessibility standards. I highly recommend <url href="https://mathtech.org/2025/04/25/screen-reader.html">viewing a demonstration</url> of a screen reader attempting to read the mathematical content of a PDF produced by <latex /> compared to the <pretext /> version of the same content.
+  </p>
+  <p>
+    When we talk about screen reader users, the audience that comes to mind most often are blind and visually-impaired readers. Most instructors in higher education have never taught a blind or severely visually-impaired student, so the need to meet these accessibility standards can feel befuddling at times. However, there is a much larger segment of the population with other print disabilities (including dyslexia) who use screen readers. I personally know a mathematics faculty member at another university in Wisconsin whose dyslexia is so bad that he cannot read above a second-grade level. However, he earned a PhD in mathematics. At the time, he had to rely largely on the goodwill of others who made audio cassette recordings of the standard textbooks in advanced mathematics. Now, as more materials become available digitally and in an accessible format, he's able to read more materials by using a screen reader. In order to facilitate this, it's important that mathematical content be included <em>in a useful way</em>.
+  </p>
+  <p>
+    When I refer to including mathematical content in a useful way, I do <em>not</em> mean something like <q>Just put the math in as an image and put alt-text on it that describes the math.</q> Consider this expression, which is an actual mathematical definition that appears in the MATH 234 textbook:
+    <md>
+      \text{curl}(\vec{F})= \left(\frac{\partial F_3}{\partial y}-\frac{\partial F_2}{\partial z}\right)\vec{i}- \left(\frac{\partial F_3}{\partial x}-\frac{\partial F_1}{\partial z}\right)\vec{j} + \left(\frac{\partial F_2}{\partial x}-\frac{\partial F_1}{\partial y}\right)\vec{k}
+    </md>.
+    Most screen readers will stop reading alt-text somewhere between 100 and 140 characters. The <latex /> required to typeset that equation is 276 characters long (with very little extraneous whitespace). It would take even more characters to type out in words. By presenting the mathematical content in a web page that uses <url href="https://www.mathjax.org">MathJax</url> to present the mathematics, someone using a screen reader can navigate the expression carefully.
+  </p>
+</section>
+
