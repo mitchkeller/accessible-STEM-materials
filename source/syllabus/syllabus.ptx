@@ -1,0 +1,691 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<pretext xml:lang="en-US" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <!-- we first include a file which contains the docinfo element: -->
+  <xi:include href="./docinfo.ptx" />
+
+  <!-- UPDATE Change xml:id to contain your course number  -->
+  <!-- UPDATE Replace SEMESTER -->
+  <!-- UPDATE Put course number in title -->
+  <!-- UPDATE If building the print or Canvas syllabus, update  -->
+  <!-- output-filename for those targets in project.ptx -->
+  <article xml:id="math475-syllabus">
+    <title>MATH 475</title>
+    <subtitle>Fall 2025 Course Policies &amp; Expectations</subtitle>
+
+    <frontmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="frontmatter">
+      <bibinfo>
+        <author>
+          <!-- UPDATE -->
+          <personname>Mitch Keller</personname>
+          <department>Department of Mathematics</department>
+          <institution>University of Wisconsin<ndash />Madison</institution>
+        </author>
+        <date>
+          <!-- UPDATE You can hard-code the date or have this auto update -->
+          Last Updated: <today />
+        </date>
+
+      </bibinfo>
+
+      <titlepage>
+        <titlepage-items/>
+      </titlepage>
+    </frontmatter>
+
+    <!-- Include chapters -->
+    <section xml:id="course-info">
+      <title>Course Information</title>
+      <p>
+        <dl>
+          <li>
+            <title>Course Description</title>
+            <!-- UPDATE Include course description from Guide -->
+            <p>
+              <!-- This is what <url href="https://guide.wisc.edu/courses/math/" visual="guide.wisc.edu/courses/math/">Guide</url> says. -->
+              Problems of enumeration, distribution, and arrangement. Inclusion-exclusion principle. Generating functions and linear recurrence relations. Combinatorial identities. Graph coloring problems. Finite designs. Systems of distinct representatives and matching problems in graphs. Potential applications in the social, biological, and physical sciences. Puzzles. Problem solving.
+            </p>
+          </li>
+          <li>
+            <title>Crosslisting</title>
+            <p>
+              This course is crosslisted as MATH/COMP SCI/STAT 475.
+            </p>
+          </li>
+          <li>
+            <title>Credits</title>
+            <!-- UPDATE Change credits to match Guide -->
+            <p>
+              3
+            </p>
+          </li>
+          <li>
+            <title>Course Designations and Attributes</title>
+            <p>
+              <dl>
+                <li>
+                  <title>Breadth</title>
+                  <!-- UPDATE MATH courses 200-level and higher are natural science breadth -->
+                  <!-- Exceptions: 425 is Physical Science; 473 is Humanities or Natural Science -->
+                  <!-- 100-level MATH courses have no breadth attribute, so remove this -->
+                  <p>
+                    Natural Science
+                  </p>
+                </li>
+                <li>
+                  <title>Level</title>
+                  <!-- UPDATE Check Guide. Will be Elementary, Intermediate, or Advanced. -->
+                  <p>
+                    Advanced
+                  </p>
+                </li>
+                <li>
+                  <title>L&amp;S Credit</title>
+                  <p>
+                    Counts as Liberal Arts and Science credit in L&amp;S
+                  </p>
+                </li>
+              </dl>
+            </p>
+          </li>
+          <li>
+            <title>Requisite</title>
+            <!-- UPDATE with info from Guide -->
+            <p>
+              (MATH 320, 340, 341, or 375) or graduate/professional standing or member of the Pre-Masters Mathematics (Visiting International) Program
+            </p>
+          </li>
+          <li>
+            <title>Instructional modality</title>
+            <!-- UPDATE if teaching online -->
+            <p>
+              In-person
+            </p>
+          </li>  
+        </dl>
+      </p>
+      <paragraphs>
+        <title>Learning Outcomes</title>
+        <!-- UPDATE with info from Guide -->
+        <p>
+          <ol>
+            <li>
+              <p>
+                Understand basic counting strategies, such as staged thought-experiments, inclusion/exclusion, generating functions, and recurrence relations, and apply these strategies to solve a wide variety of counting problems.
+              </p>
+            </li>
+            <li>
+              <p>
+                Recall basic objects that are used in combinatorics, such as permutations and combinations of sets and multisets, binomial and multinomial coefficients, the Catalan numbers, the Stirling numbers, and the partition numbers.
+              </p>
+            </li>
+            <li>
+              <p>
+                Analyze a given combinatorial problem using the standard theorems of combinatorics, such as the pigeonhole principle, the Newton binomial theorem, the multinomial theorem, the Ramsey theorem, the Dilworth theorem, the Burnside theorem, and the Polya counting theorem.
+              </p>
+            </li>
+            <li>
+              <p>
+                Construct mathematical arguments related to combinatorial problems using the above definitions, properties, theorems, and counting strategies; including the construction of examples and counterexamples.
+              </p>
+            </li>
+            <li>
+              <p>
+                Convey his or her arguments in oral and written form in English, using appropriate mathematical terminology, notation, and grammar.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </paragraphs>
+      <paragraphs>
+        <title>Meeting Times and Locations</title>
+        <!-- UPDATE -->
+        <p>
+          0930<ndash/>1045 on Tuesdays and Thursdays in Van Vleck Hall B119
+        </p>
+      </paragraphs>
+      <paragraphs>
+        <title>How the Credit Hours are Met by the Course</title>
+        <!-- UPDATE Accordingly -->
+        <!-- TODO Include generic versions for standard meeting patterns -->
+        <p>
+          This class meets for two 75-minute lectures each week over the semester and carries the expectation that students will work on course learning activities (e.g. reading, problem sets, papers, and studying) for about six hours outside of classroom per week. The syllabus includes more information about meeting times and expectations for student work.
+        </p>
+      </paragraphs>
+    </section>
+    <section xml:id="staff" xmlns:xi="http://www.w3.org/2001/XInclude">
+      <title>Course Staff</title>
+      <subsection>
+        <title>Instructor</title>
+        <paragraphs>
+          <!-- UPDATE -->
+          <title>Mitch Keller</title>
+          <p><nbsp/>
+            <dl>
+              <li>
+                <title>Title</title>
+                <!-- UPDATE -->
+                <p>
+                  Associate Director of Undergraduate Studies and Teaching Faculty
+                </p>
+              </li>
+              <li>
+                <title>Email</title>
+                <p>
+                  <url href="mailto:mitch.keller@wisc.edu">mitch.keller@wisc.edu</url>
+                </p>
+              </li>
+            </dl>
+          </p>
+        </paragraphs>
+      </subsection>
+      <subsection xml:id="office-hours">
+        <title>Student Hours</title>
+        <!-- UPDATE Fill in information about office hours -->
+        <p>
+          Student hours (also known as office hours) are intended for students to drop in with questions about homework, tests, or anything related to the course. My office hours will be held in my office, which is Van Vleck Hall 411. My office hours this semester are
+          <ul>
+            <li>
+              <p>
+                Mondays, 1400<ndash/>1500
+              </p>
+            </li>
+            <li>
+              <p>
+                Tuesdays, 1530<ndash/>1630
+              </p>
+            </li>
+          </ul>
+        </p>
+      </subsection>
+    </section>
+  <section xml:id="materials">
+    <title>Textbook and Other Required Materials</title>
+    <p>
+      <dl>
+        <!-- UPDATE By making an li for each required item -->
+        <!-- Textbook, Canvas, Gradescope, Software, etc. -->
+        <li>
+          <title>Textbook</title>
+          <p>
+            <pubtitle>Applied Combinatorics</pubtitle>, 2017.2 Edition by Mitchel T. Keller and William T. Trotter. This text is freely available as an open source textbook from <url href="https://appliedcombinatorics.org" visual="appliedcombinatorics.org"/>. If you would like an inexpensive print edition, it is available from Amazon for $19.95. The ISBN is 978-1973702719
+ or a direct link is <url href="https://bit.ly/appcomb" visual="bit.ly/appcomb"/>. 
+          </p>
+          <p>
+            <alert>Please access the book via Runestone Academy, as you will have class preparation assignments to do in the book there and I may be making some additions or corrections that are not available on the main website until next semester!</alert>
+          </p>
+        </li>
+        <li>
+          <title>Canvas</title>
+          <p>
+            Course materials will be posted to or linked from <url href="https://canvas.wisc.edu/courses/466898" visual="canvas.wisc.edu/courses/466898">Canvas</url>. This includes homework, study guides for tests, solutions, etc. Announcements will also be posted using Canvas. You are responsible for reading Canvas announcements in a timely manner.
+          </p>
+        </li>
+        <li>
+          <title>Runestone Academy</title>
+          <p>
+            Runestone Academy is an open-source platform that hosts a wide variety of computer science and mathematics textbooks and integrated learning activities. You will primarily access the textbook through Runestone Academy. You will also use Runestone Academy to complete class preparation assignments and to answer peer instruction questions during class.
+          </p>
+          <p>
+            <alert>It is important that you access Runestone Academy using the links from Canvas. Do not create an account separately!</alert>
+          </p>
+        </li>        
+        <li>
+          <title>Gradescope</title>
+          <!-- UPDATE to describe how Gradescope will be used in your course -->
+          <!-- Delete if not using Gradescope -->
+          <p>
+            You will scan and submit your written homework to Gradescope. Homework will be graded and returned to you within Gradescope. Tests and the final exam will be taken on paper, but I will scan them and upload them to Gradescope. Graded tests and the final exam will be returned to you using Gradescope. You will be able to access Gradescope using links from Canvas.
+          </p>
+        </li>
+        <li>
+          <!-- UPDATE to describe how you're using Piazza in your course -->
+          <!-- Delete if not using Piazza -->
+          <title>Piazza</title>
+          <p>
+            Depending on your responses to the first exit ticket, we may use <url href="https://piazza.com/wisc/fall2025/fa25math475002/home" visual="piazza.com/wisc/fall2025/fa25math475002/home">Piazza</url>. This page is a forum for you to discuss the material of this class with other students and the instructor. Posts to this page should be confined to questions regarding the material and logistical questions about the class. Please do not use email for math questions if we decide to use Piazza.
+          </p>
+          <p>
+            Any posts containing comments (either positive or negative) about the instructors, the class, the students, or anything else, will be deleted. Unprofessional conduct may result in disciplinary action. 
+          </p>
+        </li>
+      </dl>
+    </p>
+  </section>
+  <section xml:id="assessments">
+    <title>Assessments</title>
+    <!-- UPDATE by creating a paragraphs for each category of graded work -->
+    <paragraphs>
+      <title>Written Weekly Homework</title>
+      <p>
+        Each week you will submit solutions to selected homework problems. Some of the problems will be graded for correctness by a grader assigned to work for me. Others will be graded for completness. Homework will be submitted via Gradescope and is due by 2300 (almost) every Tuesday, starting in the third week of classes. For computing course grades, each homework homework grade will be normalized to be a real number between <m>0</m> and <m>4</m> (possibly slightly higher than <m>4</m>) in a manner specified on Canvas. Your lowest homework score will be dropped, and the other <m>10</m> will be averaged.
+      </p>
+
+      <p>
+        For graded homework problems, tests, and the final exam, each problem will be assigned an integer score between <m>0</m> and <m>4</m> based on the following rubric:
+      </p>
+
+        <tabular>
+          <col halign="center"> </col> <col width="80%"> </col>
+          <row header="yes">
+            <cell>Grade</cell>
+            <cell>Description</cell>
+          </row>
+          <row>
+            <cell>4</cell>
+            <cell><p>Good work with minor (generally computational) errors. Explanation complete or has only small gaps. (<m>\sim</m>A)</p></cell>
+          </row>
+
+          <row>
+            <cell>3</cell>
+            <cell><p>Good work with more serious (generally conceptual) errors. Explanation is complete, but may be insufficiently clear. (<m>\sim</m>B)</p></cell>
+          </row>
+
+          <row>
+            <cell>2</cell>
+            <cell><p>Significant, but incomplete, work that could clearly lead to a correct answer is presented, and some attempt at explanation is made. (<m>\sim</m>C)</p></cell>
+          </row>
+
+          <row>
+            <cell>1</cell>
+            <cell><p>Some work that might lead to a complete solution is presented. <alert>Work, even if correct, without explanation cannot receive a higher score.</alert> (<m>\sim</m>D)</p></cell>
+          </row>
+
+          <row>
+            <cell>0</cell>
+            <cell><p>No progress, no relevant information, or illegible. (<m>\sim</m>F)</p></cell>
+          </row>
+        </tabular>
+
+        <p>
+          Occasionally, exceptional work will receive a grade of <m>5</m>, generally based on high-quality explanations and/or very organized computations accompanying the explanations.
+          A score of <m>5</m> should be viewed as extra credit for outstanding work and not a routinely-expected score.
+        </p>
+
+
+    </paragraphs>
+    <paragraphs>
+      <title>Peer Instruction Participation</title>
+<p>
+  <q>Peer instruction</q> describes an instructional strategy that involves answering (typically) multiple choice questions using a technological solution, having you discuss your answers with your peers after voting has closed, and then voting again. Although this strategy developed in physics, its efficacy in a number of areas has been demonstrated through educational research. We will frequently use peer instruction in class, and Runestone Academy will be our means of voting. A component of your grade will be based on the fact that you have voted on these questions. Because they are part of the learning experience, correctness of responses will not be part of your grade. You will receive an integer score for peer instruction participation determined by the percentage of all peer instruction questions you answer over the course of the semester.
+</p>
+
+<tabular>
+  <col halign="center" right="minor"/> 
+  <col halign="center"/>
+  <col halign="center"/>
+  <col halign="center"/>
+  <col halign="center"/>
+  <col halign="center"/>
+  <col halign="center"/>
+  <col halign="center"/>
+  <row bottom="minor">
+    <cell>PI Grade/Prep Grade</cell>
+    <cell>5</cell>
+    <cell>4</cell>
+    <cell>3</cell>
+    <cell>2</cell>
+    <cell>1</cell>
+    <cell>0</cell>
+  </row>
+
+  <row>
+    <cell>Percent Answered</cell>
+    <cell> <m>[90,100]</m> </cell>
+    <cell> <m>[80,90)</m> </cell>
+    <cell> <m>[70,80)</m> </cell>
+    <cell> <m>[60,70)</m> </cell>
+    <cell> <m>[50,60)</m> </cell>
+    <cell> <m>[0,50)</m> </cell>
+  </row>
+</tabular>
+    </paragraphs>
+    <paragraphs>
+      <title>Class Preparation Assignments</title>
+      <p>
+        In order to be able to effectively use our time together in class, before most class meetings you will have a class preparation assignment that will be submitted via Runestone Academy. A typical class preparation assignment will consist of reading assigned portions of the textbook and answering some questions to help me assess what parts of the reading need the most discussion in classtime. Because these assignments are part of the learning experience, correctness of responses will not be part of your grade. You will receive an integer score for your overall class preparation assignment grade. It will be determined by the percentage of all points you earn for class preparation assignments over the course of the semester. The same scale will be used as for peer instruction grades above.
+      </p>
+    </paragraphs>
+    <paragraphs>
+      <title>Weekly Exit Tickets</title>
+      <p>
+        We will spend most of each class period actively working together through group activities to help you develop a deep understanding of the course content. In order to help me keep track of your learning progress throughout the semester, you'll complete a brief exit ticket on Canvas each week. Exit Tickets will be due every Thursday by 2300. Each exit ticket will be worth four points, and your exit ticket grade will be a real number between <m>0</m> and <m>4</m> that is the average of your scores on your exit tickets with the lowest exit ticket dropped.
+      </p>
+    </paragraphs>
+    <paragraphs>
+      <title>Tests and Final Exam</title>
+      <!-- UPDATE with specifics for your course -->
+      <p>
+        You will take two non-cumulative tests in class on Thursday, 9 October 2025, and Thursday, 20 November 2025. The final exam will be held as scheduled by the Office of the Registrar on Thursday, 18 December 2025, from 1005 to 1205 CST. The location for the final exam will be announced at a later date. Make-up tests will only be allowed for students who have a substantiated excuse approved by the instructor <em>before the date of the test</em>. For students with another valid reason for a make-up test, in the event that one cannot be arranged within a reasonable time frame, a fair system is in place to replace your grade on the missed test. <alert>Our final exam is near the end of the final examination period. The final exam will not be given before the scheduled time. You are expected to be present for the final exam as scheduled.</alert>
+      </p>
+      <p>
+        During exams, students will not be allowed to use any notes or electronic devices. Ample space will be provided on the exams for you to show your work. You must bring a writing utensil.
+      </p>
+    </paragraphs>
+  </section>
+  <section xml:id="grading">
+    <title>Grading</title>
+    <p>
+      Your grade in the class will be assigned based on the weighted average of the categories below. Each of these categories are described in more detail above. 
+    </p>
+    <!-- UPDATE by putting your grade breakdowns here -->
+    <tabular>
+      <row header="yes" bottom="minor">
+        <cell>Component</cell>
+        <cell>Weight</cell>
+      </row>
+      <row>
+        <cell>Weekly Homework (one drop)</cell>
+        <cell>15%</cell>
+      </row>
+      <row>
+        <cell>Peer Instruction Participation</cell>
+        <cell>3%</cell>
+      </row>
+      <row>
+        <cell>Class Preparation Assignment Completion</cell>
+        <cell>4%</cell>
+      </row>
+      <row>
+        <cell>Weekly Exit Tickets (one drop)</cell>
+        <cell>3%</cell>
+      </row>
+      <row>
+        <cell>Test I</cell>
+        <cell>25%</cell>
+      </row>
+      <row>
+        <cell>Test II</cell>
+        <cell>25%</cell>
+      </row>
+      <row>
+        <cell>Final Exam</cell>
+        <cell>25%</cell>
+      </row>
+    </tabular>
+  <p>
+    The weighted average computed using your scores and the weights above will be rounded to two digits after the decimal point. Letter grades will then be assigned using the cutoffs below. Cutoffs for each letter grade may be adjusted at the end of the semester, but if this happens, it will only be in favor of the students.
+  </p>
+  <tabular>
+  <col halign="center" right="minor"/>
+  <col halign="center"/>
+   <col halign="center"/>
+   <col halign="center"/>
+   <col halign="center"/>
+   <col halign="center"/>
+   <col halign="center"/>
+   <col halign="center"/>
+  <row bottom="minor">
+    <cell>Letter Grade</cell>
+    <cell>A</cell>
+    <cell>AB</cell>
+    <cell>B</cell>
+    <cell>BC</cell>
+    <cell>C</cell>
+    <cell>D</cell>
+    <cell>F</cell>
+  </row>
+
+  <row>
+    <cell>Score Interval</cell>
+    <cell> <m>[4,5]</m> </cell>
+    <cell> <m>[3.5,4)</m> </cell>
+    <cell> <m>[3,3.5)</m> </cell>
+    <cell> <m>[2.5,3)</m> </cell>
+    <cell> <m>[2,2.5)</m> </cell>
+    <cell> <m>[1,2)</m> </cell>
+    <cell> <m>[0,1)</m> </cell>
+  </row>
+
+</tabular>
+
+
+  </section>
+
+    <section xml:id="schedule">
+    <title>Tentative Schedule of Topics</title>
+    <p>
+      <!-- UPDATE to provide a schedule for the semester -->
+      <!-- For accessibility reasons, do not use a table here! -->
+      <dl>
+        <li>
+          <title>Week 1</title>
+          <p>
+            Introduction and Course Overview
+          </p>
+        </li>
+        <li>
+          <title>Week 2</title>
+          <p>
+            Sets, strings, and binomial coefficients; Combinatorial arguments
+          </p>
+        </li>
+        <li>
+          <title>Week 3</title>
+          <p>
+            Distribution problems, lattice paths, the binomial and multinomial theorems; start recursive counting
+          </p>
+        </li>        
+        <li>
+          <title>Week 4</title>
+          <p>
+            Finish recursive counting; induction
+          </p>
+        </li>        
+        <li>
+          <title>Week 5</title>
+          <p>
+            Graph Theory: Introduction, eulerian graphs, hamiltonian graphs
+          </p>
+        </li>        
+        <li>
+          <title>Week 6</title>
+          <p>
+            Graph Theory: Coloring and <alert>Test I in class on Thursday</alert>
+          </p>
+        </li>        
+        <li>
+          <title>Week 7</title>
+          <p>
+            Graph Theory: Planar graphs, counting labeled trees
+          </p>
+        </li>        
+        <li>
+          <title>Week 8</title>
+          <p>
+            Posets: Definitions, chain and antichain partitioning
+          </p>
+        </li>        
+        <li>
+          <title>Week 9</title>
+          <p>
+            Posets: The subset lattice, interval orders
+          </p>
+        </li>      
+        <li>
+          <title>Week 10</title>
+          <p>
+            Posets: Algorithms for interval orders; Principle of Inclusion-Exclusion
+          </p>
+        </li>        
+        <li>
+          <title>Week 11</title>
+          <p>
+            Principle of Inclusion-Exclusion; Generating Functions
+          </p>
+        </li>        
+        <li>
+          <title>Week 12</title>
+          <p>
+            Generating functions and <alert>Test II on Thursday</alert>
+          </p>
+        </li>        
+        <li>
+          <title>Week 13</title>
+          <p>
+            Generating functions and <alert>Thanksgiving Day on Thursday</alert>
+          </p>
+        </li>        
+        <li>
+          <title>Week 14</title>
+          <p>
+            Recurrence relations
+          </p>
+        </li>
+        <li>
+          <title>Week 15</title>
+          <p>
+            Recurrence relations (One class meeting)
+          </p>
+        </li>             
+        <li>
+          <title>Final Exam</title>
+          <p>
+            <alert>Thursday, 18 December 2025 (1005<ndash/>1205)</alert>
+          </p>
+        </li>        
+      </dl>
+    </p>
+  </section>
+
+  <section xml:id="sec-policies">
+    <title>Course-Specific Policies</title>
+    <paragraphs xml:id="para-gen-AI">
+  <title>Use of Generative AI</title>
+  <p>
+    The purpose of this course is to develop your ability to understand solve problems in combinatorics, including writing a couple of types of short proofs. The use of artificial intelligence (AI) tools and applications (ChatGPT, Copilot, DALL-E, or any others) does not support the learning objectives of this course and is prohibited. Using them in any way for written homework in this course is a violation of the course's expectations and will be addressed through UW<ndash/>Madison's academic misconduct policy, specifically UWS 14.03(1)b (b) Uses unauthorized materials or fabricated data in any academic exercise.
+  </p>
+  <p>
+    Since this is a MATH course, I'll say a bit more about what's going on with the Large Language Models (LLMs) that underlie <sq>generative AI</sq>. LLMs are, largely, probabilistic autocorrect with a tendency to plagiarize when not making up nonsense. They generate text using linear algebra and probability. They have no idea if what they have generated is correct, because they are models and not intelligent beings. They often produce nonsense, which means that they can be useful tools for experts who can detect when the LLM is lying. For students who are trying to learn, however, you generally have not yet acquired the tools to be able to tell when the LLM has produced nonsense. Thus, using LLMs is counterproductive to your learning of mathematics!
+  </p>
+  <p>
+    Ethically, there are also many issues with LLMs. They consume a lot of energy and water, although the evidence on exactly how much is consumed on a per-query basis is still low quality and often speculative. Most of the text the LLMs have been trained on may have been used in violation of copyright or licensing terms. For instance, <pubtitle>Applied Combinatorics</pubtitle> has undoubtedly been ingested by LLMs as part of their training data. However, I don't see any LLM complying with the CC-BY-SA license terms that require them to acknowledge the use of text from <pubtitle>Applied Combinatorics</pubtitle> and to share under the same license. Copyrighted works that do not have an open-source license have also been used as part of the training data. (Full disclosure: As a photographer, I do use Adobe's generative <em>remove</em> tools to remove distractions from my photographs. Adobe has only used the Adobe Stock library as training data for their Firefly model and has compensated those who have contributed images to Adobe Stock for this use. Still doesn't solve the energy and water usage piece of things, I will admit, but it does let me sleep at night in terms of use of intellectual property. I also do not use Adobe's generative tools to create new images or to add things that were not originally in the image.)
+  </p>
+</paragraphs>
+<paragraphs>
+  <title>Citing Resources</title>
+              <p>
+          With each week's homework, you must turn in a one-paragraph description of all the resources you used on that homework. This includes anyone (student, professor, roommate, <em>anyone</em>) that you talked with about the problems, as well as any book or online resource (website, PDF, social media post, email) that helped in your solution. Writing such a paragraph is a required part of each week's homework. Even if you work on the problems entirely on your own and your only resource is the book, you are required to write this paragraph. Moreover, while it will be acceptable to use any resources <em>other than <xref ref="para-gen-AI" text="custom">Generative AI</xref></em> that you would like in writing up your homework solutions, failure to honestly cite the resources that you use will be considered an instance of academic dishonesty. Here is a sample paragraph:
+        </p>
+
+        <blockquote>
+          <p>
+            <q>
+              On this week's homework, I worked collaboratively with Alice Smith, Bob Jones, and Carol Thompson on basically all of the problems. We used a technique that we learned from a You Tube video (<url href="http://youtube.blah.com"/>) to more simply factor Gaussian integers. We checked our answers against an online solution key we found at this webpage: <url href="http://blah.blah.edu"/>. We also got really stuck on Problem 5, and so we used the solution in that answer key as the basis for Problem 5.
+            </q>
+          </p>
+
+        </blockquote>
+      </paragraphs>
+<paragraphs>
+  <title>Deadlines and Extensions</title>
+  <p>
+Here is how deadlines work in the real world: They exist, and they're important. However, there's a certain amount of flexibility with them. If you need a little longer on something, you email whoever has set you the deadline and ask if you can have a few more days. This is usually not a big deal, but if it happens a lot, people will start asking you if everything is all right. That is also how deadlines for homework and exit tickets work in this class. Submit the form linked on Canvas to ask for a deadline change on anything you need, and that's mostly fine. If you ask for lots of changes, we'll work together to find ways to help you keep up with the work in the course. Because of the critical nature of the timing of peer instruction responses and class preparation assignments, due date extensions do not apply to these.
+
+  </p>
+</paragraphs>
+<paragraphs>
+  <title>Names and Pronouns</title>
+   <!-- CU-Boulder statement as found at Vandy CFT -->
+   <!-- https://cft.vanderbilt.edu/guides-sub-pages/syllabus-design/ -->
+   <!-- Accessed 20 August 2018 -->
+   <!-- Lightly modified by MTK -->
+<p>
+  Professional courtesy and sensitivity are especially important with respect to individuals and topics dealing with differences of race, culture, religion, politics, sexual orientation, gender, gender variance, and nationalities. UW-Madison has <url href="https://kb.wisc.edu/uw-madisonprofile/page.php?id=56644" visual="kb.wisc.edu/uw-madisonprofile/page.php?id=56644">options available</url> to set your name in use, which is reflected in most systems where I will see your name. I will gladly address you by an alternate name and the correct gender pronoun. Please advise me of this information early in the semester so that I may make appropriate changes to my records.
+</p>
+
+<p>
+  My pronouns are he/him/his. I ask that you address me as <q>Prof. Keller</q> or <q>Dr. Keller</q>, the appropriate professional forms. Since this is not high school, please do not address me as <q>Mr. Keller</q>. In general, you will find that I am not an overly formal individual. However, academia has a long history of marginalizing scholars—professors, librarians, and students—who don't present as the Hollywood image of a professor (older, white, male). Using titles for all your instructors is a small way that we can make the academy more inclusive. Therefore, in solidarity with my colleagues of all identities and backgrounds, <q>Prof. Keller</q> is the form of address that I prefer.
+</p>
+</paragraphs>
+
+<paragraphs>
+  <title>Learning differences and special needs</title>
+  <p>
+    There are a variety of ways in which a person can be successful academically, and it often takes time for each of us to learn what is required for us to succeed. Some learners have different abilities that warrant special attention in order to create an optimal learning environment. One aspect of this course that could make some learners uncomfortable is frequent in-class groupwork and occasional presentations to the class. Some people thrive when working together and like to jump right in, while others prefer to have time to reflect before discussing their ideas. This diversity of approach makes us all stronger. When working in groups, please be respectful of your classmates' approaches, which may involve allowing a group member some time to work quietly before joining a discussion. 
+  </p>
+  <p>
+    Please come speak with me about any concerns you have about creating a suitable learning environment for you in this course. For some accommodations, the University requires professional documentation of a disability before that accommodation can be approved. (See <q>Accommodations for Students with Disabilities</q> on the policies page of <url href="https://guide.wisc.edu/courses/#syllabustext" visual="guide.wisc.edu/courses/#syllabustext">the Guide</url>.) However, there are small things I can do in terms of group assigments and classroom culture that can create a better place to learn for all of us, and I am happy to discuss your needs with you.
+  </p>
+</paragraphs>
+
+            <paragraphs>
+      <!-- UPDATE with your policies around incomplete grades -->
+      <title>Incomplete Grades</title>
+      <p>
+        Incomplete grades will be assigned only under extraordinary circumstances in accordance with L&#x26;S policy, which states as follows:
+      </p>
+      <blockquote>
+        <p>
+          <q>An Incomplete (I) may be reported for a student who has been enrolled in a course with a passing grade until near the end of the semester/term and then, due to illness or some other unusual and substantiated cause beyond the student’s control, has been unable to take or complete the final examination (or to complete some limited amount of term work). An Incomplete is not given to a student who stays away from a final examination unless the student proves to the instructor that he or she was prevented from attending as indicated above. In the absence of such proof the grade reported will be an F. Even when a student can provide verifiable documentation, a student may still earn a grade of F if his/her work convinces the instructor that the student cannot successfully pass the course.</q>
+        </p>
+      </blockquote>
+      <p>
+        If you feel an incomplete grade may be warranted, you must contact me <em>before</em> the end of the final examination period on Thursday, 18 December 2025.
+      </p>
+    </paragraphs>
+  </section>
+  <section xml:id="inst-statements">
+    <title>Institutional Syllabus Statements</title>
+    <p>
+      The following statements from the institution all apply in this course:
+      <ul>
+        <li>
+          <p>
+            Academic Calendar &#x26; Religious Observances
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Academic Integrity Statement
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Accommodations for Students with Disabilities
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Course Evaluations
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Diversity &#x26; Inclusion Statement
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Mental Health and Well-Being Statement
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Privacy of Student Records &#x26; the Use of Audio Recorded Lectures Statement
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Students<rsq/> Rules, Rights &#x26; Responsibilities, and
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Teaching &#x26; Learning Data Transparency Statement
+          </p>
+        </li>
+      </ul>
+      The full text of all of these statements can be found in <url href="https://guide.wisc.edu/courses/#syllabustext" visual="guide.wisc.edu/courses/#syllabustext">the Guide</url>.
+    </p>
+  </section>
+  </article>
+</pretext>
