@@ -7,6 +7,10 @@ pages:
     - pretext upgrade
     - pretext build --clean --deploys
     - pretext deploy -s
+    - rm -rf output/stage/test/_static
+    - rm -rf output/stage/syllabus/_static
+    - ln -s output/stage/notes/_static output/stage/test/_static
+    - ln -s output/stage/notes/_static output/stage/syllabus/_static
     - mkdir .public
     - cp -R output/stage/* .public
     - rm -rf public
