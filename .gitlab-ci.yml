@@ -6,6 +6,7 @@ pages:
   script:
     - pretext upgrade
     - pretext build --clean --deploys
+    - pretext deploy -s
     - mkdir .public
     - cp -R output/stage/* .public
     - rm -rf public
