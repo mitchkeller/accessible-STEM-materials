@@ -3,7 +3,7 @@
 <section xml:id="sec-canvas" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Short Content in Canvas</title>
   <p>
-    The quickest and easiest way for an instructor to get small documents (e.g., homework solutions) available to students in an accessible format is to use the MathJax support in Canvas. UW<ndash/>Madison's Canvas instance has the MathJax components enabled by default. While this has the limitation that instructors/authors who have elaborate custom <latex/> macros will not be able to use those macros, it's unlikely that something appearing in a small document for students would require such macros.
+    The quickest and easiest way for an instructor to get small documents (e.g., homework solutions) available to students in an accessible format is to use the MathJax support in Canvas. UW<ndash/>Madison's Canvas instance has the MathJax components enabled by default. While this has the limitation that instructors/authors who have elaborate custom <latex/> macros will not be able to use those macros<fn>MathJax supports macros, but they must be inside a <c>script</c> tag in HTML. Canvas's rich content editor strips out all <c>script</c> elements.</fn>, it's unlikely that something appearing in a small document for students would require such macros.
   </p>
   <p>
     Putting math content into a Canvas page (or basically any text box one can write in on Canvas, including announcements, quizzes, etc.) is as simple as marking the mathematical content with the appropriate delimiters. 

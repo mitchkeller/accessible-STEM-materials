@@ -3,7 +3,7 @@
 <section xml:id="sec-images" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Working with Images</title>
   <p>
-    I need content!
+    <pretext /> provides great support for providing the content required for images to be considered accessible. The <c>shortdescription</c> tag gets used as the alt-text for the image. This is intended for short, unstructured text, given the constraints on how screen readers handle alt-text. The <c>description</c> tag gets put in as an image discription that is available to both screen reader users and sighted users (but is initially collapsed).
   </p>
 
 </section>

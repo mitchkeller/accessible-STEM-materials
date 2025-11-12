@@ -17,5 +17,5 @@ This repository includes a number of resources that can be used to help get star
     - `syllabus-latex` provides LaTeX source that can be massaged to produce a version that might print better than the HTML version. (This version will not meet accessibility standards and should not be shared electronically!)
     - `syllabus-canvas` builds a SCORM file that can be uploaded to Canvas. You can mimic the entry in `project.ptx` for `syllabus-canvas` to produce SCORM versions of other HTML outputs.
 1. Sample test is in `source/test`.
-1. Sample handout (for an in-class activity) is in `source/handout`.
+1. Sample handout (for an in-class activity) is provided [in a Github repository](https://github.com/mitchkeller/syllabus-worksheet-demo) and you can view the [example output](https://math.mitchkeller.phd/syllabus-worksheet-demo/worksheets/frontmatter.html).
 1. Sample reveal.js slides are provided [in a Github repository](https://github.com/mitchkeller/slides-demo) with some [additional guidance](https://mathtech.org/2025/10/27/annotated-slides.html).

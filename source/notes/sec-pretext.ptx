@@ -56,6 +56,9 @@
         </p>
       </li>
     </ul>
+  </p>
+  <p>
+    In a <url href="https://github.com/mitchkeller/syllabus-worksheet-demo">separate repository</url>, I have an example of handouts or worksheets for in-class activities. (This is basically the same setup as used for the example test in this repository.)
     <pretext /> also supports HTML slides via reveal.js, which I have in a <url href="https://github.com/mitchkeller/slides-demo">separate repository</url> with some additional <url href="https://mathtech.org/2025/10/27/annotated-slides.html">guidance</url> on how I use these slides to allow hand-annotation in class and then having a fully HTML version to share with students after class.
   </p>
 </section>
