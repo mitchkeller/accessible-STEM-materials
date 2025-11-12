@@ -5,12 +5,9 @@ before_script: []
 pages:
   script:
     - pretext upgrade
-    - pretext build --clean --deploys
-    - pretext deploy -s
-    - rm -rf output/stage/test/_static
-#    - ln -s output/stage/syllabus/_static output/stage/test/_static
+    - pretext build --clean notes
     - mkdir .public
-    - cp -R output/stage/* .public
+    - cp -R output/notes/* .public
     - rm -rf public
     - mv .public public
   artifacts:
